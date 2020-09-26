@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Animation</title>
+</head>
+<body>
+    <div class="card card-body mt-5">
+        <h1 class="text-center mb-3">Add A Animation For Users To Review</h1>
+        <form method="POST", action="/animations/create">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input class="form-control", type="text", id="title", name="title", placeholder="Title">
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control", type="text", id="genre", name="genre", placeholder="Genre">
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control", type="text", id="releaseDate", name="releaseDate", placeholder="Release Date">
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control", type="text", id="country", name="country", placeholder="Country">
+                </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control", type="text", id="duration", name="duration", placeholder="Duration">
+                </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control", type="text", id="creator", name="creator", placeholder="Creator">
+                </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control", type="number", id="popcornRating", name="popcornRating", placeholder="Popcorn Rating">
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea class="form-control form-control-lg", type="text-area", id="cast", name="cast", placeholder="Cast"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <input class="form-control mt-4", type="number", id="episodes", name="episodes", placeholder="Episodes">
+                </div>
+                <div class="form-group col-md-12">
+                    <textarea class="form-control form-control-lg", type="text-area", id="description", name="description", placeholder="Description"></textarea>
+                </div>
+                <input type="Submit" value="Create" class="btn btn-info btn-block" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
